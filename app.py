@@ -13,6 +13,10 @@ def load_data():
     nltk.download('punkt')
     nltk.download('stopwords')
     nltk.download('wordnet')
+
+
+
+
     df = pd.read_csv("faq_dataset.csv")
 
     def preprocessing(text):

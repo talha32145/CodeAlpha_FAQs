@@ -9,7 +9,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 @st.cache_data
 def load_data():
-     import nltk
+    import nltk
     nltk.download('punkt')
     nltk.download('stopwords')
     nltk.download('wordnet')

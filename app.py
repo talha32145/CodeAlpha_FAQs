@@ -9,6 +9,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 @st.cache_data
 def load_data():
+     import nltk
+    nltk.download('punkt')
+    nltk.download('stopwords')
+    nltk.download('wordnet')
     df = pd.read_csv("faq_dataset.csv")
 
     def preprocessing(text):
